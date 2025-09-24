@@ -25,11 +25,27 @@ export function createGallery(images) {
         <a href="${largeImageURL}">
           <img src="${webformatURL}" alt="${tags}" loading="lazy" />
         </a>
+      
+      
         <div class="info">
-          <p><b>Likes:</b> ${likes}</p>
-          <p><b>Views:</b> ${views}</p>
-          <p><b>Comments:</b> ${comments}</p>
-          <p><b>Downloads:</b> ${downloads}</p>
+          <ul class="info-list">
+            <li class="info-item">
+              <h4 class="title-info-item">Likes</h4>
+              <p class="info-item-value">${likes}</p>
+            </li>
+            <li class="info-item">
+              <h4 class="title-info-item">Views</h4>
+              <p class="info-item-value">${views}</p>
+            </li>
+            <li class="info-item">
+              <h4 class="title-info-item">Comments</h4>
+              <p class="info-item-value">${comments}</p>
+            </li>
+            <li class="info-item">
+              <h4 class="title-info-item">Downloads</h4>
+              <p class="info-item-value">${downloads}</p>
+            </li>
+          </ul>
         </div>
       </li>`
     )
